@@ -1,7 +1,41 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("./mario_background2.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "mario64";
+}
+
 header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: yellow;
+  height: 30vh;
+  max-width: 800px;
+  width: 100%;
+}
+
+header h1 {
+  font-size: 2.5em;
+}
+
+.sub-header {
+  display: flex;
+  justify-content: space-around;
+  max-width: 500px;
+  width: 100%;
+}
+
+.sub-header button {
+  height: 50px;
+  width: 80px;
+  font-family: "mario64";
+  font-weight: bold;
+  font-size: 1em;
 }
 
 #stopgame {
@@ -9,7 +43,11 @@ header {
 }
 
 .game-container {
-  margin-top: 20px;
+  padding: 20px 0px;
+  background: green;
+  max-width: 800px;
+  width: 100%;
+  height: 60vh;
 }
 
 .row {
@@ -42,4 +80,9 @@ header {
 
 .hole.up .mole {
   top: 0%;
+}
+
+@font-face {
+  font-family: "mario64";
+  src: url("./SuperMarioBros-ov7d.ttf");
 }
