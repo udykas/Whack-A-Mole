@@ -16,7 +16,7 @@ If the game isn't working, or if you make any changes to `index.js` inside of `s
 
 Run `npm install` to get the Babel node modules.
 
-After the node modules are installed, run the following command to compile src/index.js:
+After the node modules are installed, run the following command in your terminal to compile `src/index.js`:
 
 `./node_modules/.bin/babel src --out-dir lib`
 
