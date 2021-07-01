@@ -1,0 +1,45 @@
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#stopgame {
+  display: none;
+}
+
+.game-container {
+  margin-top: 20px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.hole {
+  position: relative;
+  height: 100px;
+  width: 100px;
+  background-color: black;
+  border-radius: 50%;
+  margin: 20px;
+  overflow: hidden;
+}
+
+.mole {
+  position: absolute;
+  z-index: 1;
+  height: 80px;
+  width: 100px;
+  background-image: url(mole1.png);
+  background-size: cover;
+  background-position: center;
+  top: 100%;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+
+.hole.up .mole {
+  top: 0%;
+}
