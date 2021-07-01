@@ -77,6 +77,7 @@ resetButton.onclick = function resetGame() {
   score = 0;
   updateScore(score);
   buttonDisplay('inline', 'none')
+  clearTimeout(timer);
 }
 
 const updateScore = (score) => scoreBoard.innerHTML = `SCORE: ${score}`
